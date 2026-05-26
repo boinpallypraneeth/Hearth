@@ -1,0 +1,40 @@
+# ===== Personal / sensitive data — NEVER commit =====
+# The model's extracted memories about you (name, projects, anything from chats)
+backend/memory.json
+**/memory.json
+# Any chat history or logs
+*.log
+/tmp/hearth-backend.log
+# Local environment / secrets (none expected, but belt-and-suspenders)
+.env
+*.env
+secrets.*
+
+# ===== Python =====
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# ===== Node (Tauri frontend tooling) =====
+node_modules/
+desktop/node_modules/
+npm-debug.log*
+
+# ===== Rust / Tauri build output (huge, machine-specific) =====
+desktop/src-tauri/target/
+target/
+# Built app bundles and installers
+*.app
+*.dmg
+
+# ===== macOS junk =====
+.DS_Store
+.AppleDouble
+
+# ===== Editor =====
+.vscode/
+.idea/
+*.swp
